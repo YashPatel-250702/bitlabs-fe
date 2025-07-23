@@ -4,7 +4,13 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { GoogleOAuthProvider } from "@react-oauth/google";
-import keycloak from "./keycloak";
+import Keycloak from 'keycloak-js';
+
+const keycloak = new Keycloak({
+  url: 'https://bmsso.duckdns.org/',
+  realm: 'bitlabs',
+  clientId: 'telentStream',
+});
 
 // // Function to load the Tidio script
 // function loadTidioScript() {
