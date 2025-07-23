@@ -28,7 +28,7 @@ keycloak
     onLoad: "login-required",
     checkLoginIframe: false,
     responseMode: "query",
-    redirectUri: window.location.origin + "/dashboard",
+    redirectUri: window.location.origin + "/candidate",
   })
   .then((authenticated) => {
     if (authenticated) {
